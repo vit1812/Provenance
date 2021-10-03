@@ -68,6 +68,22 @@
 		B35E6C38207EE15D0040709A /* CoreOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C36207EE15D0040709A /* CoreOptions.swift */; };
 		B372638426EA015700E95488 /* CocoaLumberjack+swift-log.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3296E8326C67F420088AC32 /* CocoaLumberjack+swift-log.swift */; };
 		B372638526EA015800E95488 /* CocoaLumberjack+swift-log.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3296E8326C67F420088AC32 /* CocoaLumberjack+swift-log.swift */; };
+		B3A29774270952D800DDBF37 /* Benefit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A2976F270952D800DDBF37 /* Benefit.swift */; };
+		B3A29775270952D800DDBF37 /* Benefit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A2976F270952D800DDBF37 /* Benefit.swift */; };
+		B3A29776270952D800DDBF37 /* PatreonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A29770270952D800DDBF37 /* PatreonAPI.swift */; };
+		B3A29777270952D800DDBF37 /* PatreonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A29770270952D800DDBF37 /* PatreonAPI.swift */; };
+		B3A29778270952D800DDBF37 /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A29771270952D800DDBF37 /* Campaign.swift */; };
+		B3A29779270952D800DDBF37 /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A29771270952D800DDBF37 /* Campaign.swift */; };
+		B3A2977A270952D800DDBF37 /* Patron.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A29772270952D800DDBF37 /* Patron.swift */; };
+		B3A2977B270952D800DDBF37 /* Patron.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A29772270952D800DDBF37 /* Patron.swift */; };
+		B3A2977C270952D800DDBF37 /* Tier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A29773270952D800DDBF37 /* Tier.swift */; };
+		B3A2977D270952D800DDBF37 /* Tier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A29773270952D800DDBF37 /* Tier.swift */; };
+		B3A2978027095C4200DDBF37 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A2977F27095C4200DDBF37 /* Keychain.swift */; };
+		B3A2978127095C4200DDBF37 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A2977F27095C4200DDBF37 /* Keychain.swift */; };
+		B3A2978427095CAC00DDBF37 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = B3A2978327095CAC00DDBF37 /* KeychainAccess */; };
+		B3A2978627095CB700DDBF37 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = B3A2978527095CB700DDBF37 /* KeychainAccess */; };
+		B3A297892709600400DDBF37 /* PatreonAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A297882709600400DDBF37 /* PatreonAccount.swift */; };
+		B3A2978A2709600400DDBF37 /* PatreonAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A297882709600400DDBF37 /* PatreonAccount.swift */; };
 		B3A74C8B20522B04001D3D2E /* PVEmulatorCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A74C8920522B04001D3D2E /* PVEmulatorCore.swift */; };
 		B3A9F42C1DE86DAD008450F5 /* PVGameControllerUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B3FA5D611D6B90BD00060D71 /* PVGameControllerUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3A9F42D1DE86DAE008450F5 /* PVGameControllerUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B3FA5D611D6B90BD00060D71 /* PVGameControllerUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -186,6 +202,13 @@
 		B3532B3E21A7B753006CDA0F /* PVSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVSettingsTests.swift; sourceTree = "<group>"; };
 		B3532C3521A925C1006CDA0F /* SortOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOption.swift; sourceTree = "<group>"; };
 		B35E6C36207EE15D0040709A /* CoreOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreOptions.swift; sourceTree = "<group>"; };
+		B3A2976F270952D800DDBF37 /* Benefit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefit.swift; sourceTree = "<group>"; };
+		B3A29770270952D800DDBF37 /* PatreonAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatreonAPI.swift; sourceTree = "<group>"; };
+		B3A29771270952D800DDBF37 /* Campaign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
+		B3A29772270952D800DDBF37 /* Patron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patron.swift; sourceTree = "<group>"; };
+		B3A29773270952D800DDBF37 /* Tier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tier.swift; sourceTree = "<group>"; };
+		B3A2977F27095C4200DDBF37 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		B3A297882709600400DDBF37 /* PatreonAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatreonAccount.swift; sourceTree = "<group>"; };
 		B3A74C8920522B04001D3D2E /* PVEmulatorCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVEmulatorCore.swift; sourceTree = "<group>"; };
 		B3AB37872187F9A9009D9244 /* PViCadeGamepadDirectionPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PViCadeGamepadDirectionPad.swift; sourceTree = "<group>"; };
 		B3AB37882187F9A9009D9244 /* iCadeControllerSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iCadeControllerSetting.swift; sourceTree = "<group>"; };
@@ -243,6 +266,7 @@
 				B324C3162191963B009F4EDC /* AVFoundation.framework in Frameworks */,
 				B3CA5B5126E9E4D500687B27 /* CocoaLumberjack in Frameworks */,
 				B3296E8926C67F6B0088AC32 /* CocoaLumberjackSwiftLogBackend in Frameworks */,
+				B3A2978627095CB700DDBF37 /* KeychainAccess in Frameworks */,
 				B3AF6FDF219161C0000FA7F9 /* GameController.framework in Frameworks */,
 				B3AF6FDD219161BC000FA7F9 /* Foundation.framework in Frameworks */,
 				B336B8F826B3991500960A81 /* CocoaLumberjackSwift in Frameworks */,
@@ -257,6 +281,7 @@
 				B336B8F426B398A900960A81 /* Reachability in Frameworks */,
 				B3AF6FDA2191616C000FA7F9 /* Foundation.framework in Frameworks */,
 				B3AF6FD821916168000FA7F9 /* GameController.framework in Frameworks */,
+				B3A2978427095CAC00DDBF37 /* KeychainAccess in Frameworks */,
 				B3296E8726C67F660088AC32 /* CocoaLumberjackSwiftLogBackend in Frameworks */,
 				B3FFF02D26E9E65800A33143 /* AVFoundation.framework in Frameworks */,
 				B336B8F126B3985B00960A81 /* CocoaLumberjackSwift in Frameworks */,
@@ -278,6 +303,8 @@
 		1ACEA63B17F7467D0031B1C9 = {
 			isa = PBXGroup;
 			children = (
+				B3A2978727095D0200DDBF37 /* Keychain */,
+				B3A2976E270952D800DDBF37 /* Patreon */,
 				B3CDEEB821D4C394000C55F7 /* EmulatorCore */,
 				B3447F99218C1CBE00557ACE /* Settings */,
 				B3AB37F721882119009D9244 /* CoreOptions */,
@@ -409,6 +436,27 @@
 				B3532B3E21A7B753006CDA0F /* PVSettingsTests.swift */,
 			);
 			path = PVSupportTests;
+			sourceTree = "<group>";
+		};
+		B3A2976E270952D800DDBF37 /* Patreon */ = {
+			isa = PBXGroup;
+			children = (
+				B3A297882709600400DDBF37 /* PatreonAccount.swift */,
+				B3A2976F270952D800DDBF37 /* Benefit.swift */,
+				B3A29770270952D800DDBF37 /* PatreonAPI.swift */,
+				B3A29771270952D800DDBF37 /* Campaign.swift */,
+				B3A29772270952D800DDBF37 /* Patron.swift */,
+				B3A29773270952D800DDBF37 /* Tier.swift */,
+			);
+			path = Patreon;
+			sourceTree = "<group>";
+		};
+		B3A2978727095D0200DDBF37 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				B3A2977F27095C4200DDBF37 /* Keychain.swift */,
+			);
+			path = Keychain;
 			sourceTree = "<group>";
 		};
 		B3AB36DC2187F4C4009D9244 /* Controller */ = {
@@ -592,6 +640,7 @@
 				B3B492CA26B3A96B000B426B /* Reachability */,
 				B3296E8826C67F6B0088AC32 /* CocoaLumberjackSwiftLogBackend */,
 				B3CA5B5026E9E4D500687B27 /* CocoaLumberjack */,
+				B3A2978527095CB700DDBF37 /* KeychainAccess */,
 			);
 			productName = "PVSupportTV Framework";
 			productReference = B3C96E9E1D62C3A3003F1E93 /* PVSupport.framework */;
@@ -620,6 +669,7 @@
 				B336B8F326B398A900960A81 /* Reachability */,
 				B3296E8626C67F660088AC32 /* CocoaLumberjackSwiftLogBackend */,
 				B3CA5B5226E9E4DC00687B27 /* CocoaLumberjack */,
+				B3A2978327095CAC00DDBF37 /* KeychainAccess */,
 			);
 			productName = "PVSupportTV Framework";
 			productReference = B3C96ED81D62C5E7003F1E93 /* PVSupport.framework */;
@@ -663,6 +713,7 @@
 			packageReferences = (
 				B336B8EF26B3985B00960A81 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
 				B336B8F226B398A900960A81 /* XCRemoteSwiftPackageReference "Reachability.swift" */,
+				B3A2978227095CAC00DDBF37 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 1ACEA64517F7467D0031B1C9 /* Products */;
 			projectDirPath = "";
@@ -717,6 +768,7 @@
 				B3CDEEBD21D4C3E6000C55F7 /* ArchiveSupport.swift in Sources */,
 				B3AB37E421881A83009D9244 /* PViCadeGamepad.swift in Sources */,
 				B35E6C38207EE15D0040709A /* CoreOptions.swift in Sources */,
+				B3A2977B270952D800DDBF37 /* Patron.swift in Sources */,
 				B3AB37EC21881B7B009D9244 /* PViCade8BitdoController.swift in Sources */,
 				B3AB37DD21881869009D9244 /* PViCadeInputAxis.swift in Sources */,
 				B3296EA026C685450088AC32 /* DDLogLevel+CustomStringConvertable.swift in Sources */,
@@ -739,18 +791,24 @@
 				B3AB37C0218814A8009D9244 /* PViCadeReader.swift in Sources */,
 				B3FA5D661D6B90BD00060D71 /* PVEmulatorCore.m in Sources */,
 				B3447E8B218B7E4B00557ACE /* CARingBuffer.cpp in Sources */,
+				B3A29777270952D800DDBF37 /* PatreonAPI.swift in Sources */,
 				B3D73D401EA15BB20023925B /* NSFileManager+OEHashingAdditions.m in Sources */,
 				B3CDEEC021D4C41D000C55F7 /* DiscSwappable.swift in Sources */,
+				B3A2977D270952D800DDBF37 /* Tier.swift in Sources */,
 				B3F0846D2188CA7A00FF39EE /* CocoaLumberExtensions.swift in Sources */,
+				B3A2978127095C4200DDBF37 /* Keychain.swift in Sources */,
 				B302F8AD20B73D6500C5E502 /* PVLogging.m in Sources */,
 				B3447E91218B7E4B00557ACE /* CAAudioTimeStamp.cpp in Sources */,
 				B3C96EA91D62C3C3003F1E93 /* OEGameAudio.m in Sources */,
+				B3A2978A2709600400DDBF37 /* PatreonAccount.swift in Sources */,
 				B3447F9C218C1CD200557ACE /* PVSettingsModel.swift in Sources */,
 				0592894F1DC194FD0012644D /* RealTimeThread.m in Sources */,
+				B3A29775270952D800DDBF37 /* Benefit.swift in Sources */,
 				B302F8A320B73D6500C5E502 /* PVLogEntry.m in Sources */,
 				B3AB37ED21881B7B009D9244 /* PViCadeMocuteController.swift in Sources */,
 				B3AB37BE218812BC009D9244 /* iCadeReaderView.swift in Sources */,
 				B3E6DADF20B7BF8600454DD4 /* UIDeviceExtension.swift in Sources */,
+				B3A29779270952D800DDBF37 /* Campaign.swift in Sources */,
 				B302F8AB20B73D6500C5E502 /* PVProvenanceLogging.m in Sources */,
 				B3296EA326C68CCE0088AC32 /* PVCocoaLumberJackLogging.swift in Sources */,
 			);
@@ -765,6 +823,7 @@
 				B3CDEEBC21D4C3E6000C55F7 /* ArchiveSupport.swift in Sources */,
 				B34AB5782106DC5300C45F09 /* OERingBuffer.m in Sources */,
 				B34AB5772106DC5300C45F09 /* OEGameAudio.m in Sources */,
+				B3A2977A270952D800DDBF37 /* Patron.swift in Sources */,
 				B3AB37E921881B7A009D9244 /* PViCade8BitdoController.swift in Sources */,
 				B3AB37DC21881869009D9244 /* PViCadeInputAxis.swift in Sources */,
 				B3296E9F26C685450088AC32 /* DDLogLevel+CustomStringConvertable.swift in Sources */,
@@ -787,18 +846,24 @@
 				B3447E90218B7E4B00557ACE /* CAAudioTimeStamp.cpp in Sources */,
 				B34AB5732106DC3700C45F09 /* PVProvenanceLogging.m in Sources */,
 				B3AB37BF218814A7009D9244 /* PViCadeReader.swift in Sources */,
+				B3A29776270952D800DDBF37 /* PatreonAPI.swift in Sources */,
 				B34AB57D2106DC6100C45F09 /* RealTimeThread.m in Sources */,
 				B3CDEEBF21D4C41D000C55F7 /* DiscSwappable.swift in Sources */,
+				B3A2977C270952D800DDBF37 /* Tier.swift in Sources */,
 				B34AB57B2106DC6100C45F09 /* NSObject+PVAbstractAdditions.m in Sources */,
+				B3A2978027095C4200DDBF37 /* Keychain.swift in Sources */,
 				B34AB57E2106DC6100C45F09 /* PVEmulatorCore.m in Sources */,
 				B34AB5742106DC4100C45F09 /* PVLogEntry.m in Sources */,
 				B34AB5792106DC5300C45F09 /* TPCircularBuffer.c in Sources */,
+				B3A297892709600400DDBF37 /* PatreonAccount.swift in Sources */,
 				B34AB5802106DC6100C45F09 /* PVGameControllerUtilities.m in Sources */,
 				B34AB5752106DC4100C45F09 /* PVLogging.m in Sources */,
+				B3A29774270952D800DDBF37 /* Benefit.swift in Sources */,
 				B3AB37EA21881B7A009D9244 /* PViCadeMocuteController.swift in Sources */,
 				B3F0846C2188CA7A00FF39EE /* CocoaLumberExtensions.swift in Sources */,
 				B3AB37BD218812BB009D9244 /* iCadeReaderView.swift in Sources */,
 				B3AB37E321881A82009D9244 /* PViCadeGamepad.swift in Sources */,
+				B3A29778270952D800DDBF37 /* Campaign.swift in Sources */,
 				B3296EA226C68CCE0088AC32 /* PVCocoaLumberJackLogging.swift in Sources */,
 				B3447F9B218C1CD200557ACE /* PVSettingsModel.swift in Sources */,
 			);
@@ -1410,6 +1475,14 @@
 				minimumVersion = 5.1.0;
 			};
 		};
+		B3A2978227095CAC00DDBF37 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1477,6 +1550,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B336B8F226B398A900960A81 /* XCRemoteSwiftPackageReference "Reachability.swift" */;
 			productName = Reachability;
+		};
+		B3A2978327095CAC00DDBF37 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3A2978227095CAC00DDBF37 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		B3A2978527095CB700DDBF37 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3A2978227095CAC00DDBF37 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
 		};
 		B3B492CA26B3A96B000B426B /* Reachability */ = {
 			isa = XCSwiftPackageProductDependency;

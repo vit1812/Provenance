@@ -843,6 +843,7 @@
 		B399119226C0F41300E54426 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B399119326C0F41300E54426 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		B3995E4E2058229F001D4985 /* PVFCEU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PVFCEU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3A2977E27095A9700DDBF37 /* createVersionHeader.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = createVersionHeader.sh; sourceTree = "<group>"; };
 		B3A40C7021A67C7800544C20 /* PVGameLibrarySectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVGameLibrarySectionFooterView.swift; sourceTree = "<group>"; };
 		B3AB371E2187F568009D9244 /* PVSNESControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PVSNESControllerViewController.swift; sourceTree = "<group>"; };
 		B3AB371F2187F568009D9244 /* PVAtari2600ControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PVAtari2600ControllerViewController.swift; sourceTree = "<group>"; };
@@ -1269,6 +1270,7 @@
 		1A4869BB17C8CA2C0019F6D2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B3A2977E27095A9700DDBF37 /* createVersionHeader.sh */,
 				B361938F221FB93B00F73875 /* Provenance-Free.entitlements */,
 				B3977533219AB53F00E16AD5 /* Provenance.entitlements */,
 				1A1F0B6719CC4EB000764BE6 /* Assets.xcassets */,
