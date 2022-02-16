@@ -30,7 +30,7 @@ protocol JSDPadDelegate: AnyObject {
 }
 
 
-final class JSDPad: UIView {
+final class JSDPad: MovableButtonView {
     
     public class func JoyPad(frame: CGRect) -> JSDPad {
         let dpad = JSDPad.init(frame: frame)
@@ -140,24 +140,24 @@ final class JSDPad: UIView {
     func image(for direction: JSDPadDirection) -> UIImage? {
         var image: UIImage?
         switch direction {
-        case .up:
-            image = UIImage(named: "dPad-Up")
-        case .down:
-            image = UIImage(named: "dPad-Down")
-        case .left:
-            image = UIImage(named: "dPad-Left")
-        case .right:
-            image = UIImage(named: "dPad-Right")
-        case .upLeft:
-            image = UIImage(named: "dPad-UpLeft")
-        case .upRight:
-            image = UIImage(named: "dPad-UpRight")
-        case .downLeft:
-            image = UIImage(named: "dPad-DownLeft")
-        case .downRight:
-            image = UIImage(named: "dPad-DownRight")
-        case .none:
-            image = UIImage(named: "dPad-None")
+            case .up:
+                image = UIImage(named: "dPad-Up")
+            case .down:
+                image = UIImage(named: "dPad-Down")
+            case .left:
+                image = UIImage(named: "dPad-Left")
+            case .right:
+                image = UIImage(named: "dPad-Right")
+            case .upLeft:
+                image = UIImage(named: "dPad-UpLeft")
+            case .upRight:
+                image = UIImage(named: "dPad-UpRight")
+            case .downLeft:
+                image = UIImage(named: "dPad-DownLeft")
+            case .downRight:
+                image = UIImage(named: "dPad-DownRight")
+            case .none:
+                image = UIImage(named: "dPad-None")
         }
         return image
     }
