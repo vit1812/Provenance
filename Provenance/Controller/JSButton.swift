@@ -16,7 +16,7 @@ protocol JSButtonDelegate: AnyObject {
 }
 
 final class JSButton: MovableButtonView {
-    
+
     private(set) var titleLabel: UILabel!
     private var backgroundImageView: UIImageView! {
         didSet {
@@ -139,7 +139,7 @@ final class JSButton: MovableButtonView {
             super.touchesBegan(touches, with: event)
             return
         }
-        
+
         delegate?.buttonPressed(self)
         pressed = true
     }
@@ -148,7 +148,7 @@ final class JSButton: MovableButtonView {
         guard let touch = touches.first else {
             return
         }
-        
+
         if inMoveMode {
             super.touchesMoved(touches, with: event)
             return
@@ -176,7 +176,7 @@ final class JSButton: MovableButtonView {
             super.touchesEnded(touches, with: event)
             return
         }
-        
+
         delegate?.buttonReleased(self)
         pressed = false
     }
@@ -186,7 +186,7 @@ final class JSButton: MovableButtonView {
             super.touchesCancelled(touches, with: event)
             return
         }
-        
+
         delegate?.buttonReleased(self)
         pressed = false
     }

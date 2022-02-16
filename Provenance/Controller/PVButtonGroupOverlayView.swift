@@ -78,7 +78,7 @@ final class PVButtonGroupOverlayView: MovableButtonView {
             button.touchesEnded(touches, with: event)
         }
     }
-    
+
     var isMovable: Bool {
         return true
     }
