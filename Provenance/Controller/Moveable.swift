@@ -47,10 +47,11 @@ class MovableButtonView : UIView, Moveable {
 
     var startMoveFrame : CGRect?
     func didStartMoving() {
-        if let superMove = superview as? Moveable {
+		startMoveFrame = frame
+
+		if let superMove = superview as? Moveable ?? superview?.superview as? Moveable {
             superMove.didStartMoving()
         }
-        startMoveFrame = frame
     }
 
     func didFinishMoving(velocity:CGPoint) {
@@ -64,6 +65,8 @@ class MovableButtonView : UIView, Moveable {
             isCustomMoved = true
         }
     }
+
+	var inMoveMode: Bool = false
 }
 
 import ObjectiveC
@@ -154,7 +157,7 @@ public extension UIGestureRecognizer {
 
 import UIKit
 
-public protocol Moveable : class {
+public protocol Moveable : UIView {
     func makeMoveable()
     func didStartMoving()
     func didFinishMoving(velocity:CGPoint)
@@ -165,42 +168,59 @@ public protocol Moveable : class {
     var inMoveMode : Bool {get set}
 }
 
+public protocol Scalable: UIView {
+	func didStartScaling()
+	func didFinishScaling()
+	func canScalTo(factor: Float) -> Bool
+
+	func translateScale(factor: Float,
+						startSizet:CGSize,
+						currentSize:CGSize) -> CGSize
+	func animateToScaledTransform(transform:CGAffineTransform)
+	var inScaleMode : Bool {get set}
+}
+
 struct MoveablePropertyKeys {
     static var inMoveModeKey = "inMoveModeKey"
 }
 
-public extension Moveable where Self:UIView {
-
-    public internal(set) var inMoveMode: Bool {
-        get {
-            return Associator.getAssociatedObject(object: self, associativeKey:&MoveablePropertyKeys.inMoveModeKey) ?? false
-        }
-        set {
-            Associator.setAssociatedObject(object: self, value: newValue, associativeKey:&MoveablePropertyKeys.inMoveModeKey, policy: .OBJC_ASSOCIATION_RETAIN)
-        }
-    }
+public extension Moveable {
+//
+//	internal(set) var inMoveMode: Bool {
+//        get {
+//            return Associator.getAssociatedObject(object: self, associativeKey:&MoveablePropertyKeys.inMoveModeKey) ?? false
+//        }
+//        set {
+//            Associator.setAssociatedObject(object: self, value: newValue, associativeKey:&MoveablePropertyKeys.inMoveModeKey, policy: .OBJC_ASSOCIATION_RETAIN)
+//        }
+//    }
 
     var isMovable : Bool {
-        let superIsMoveable : Bool = superview is Moveable || superview?.superview is Moveable
-        return !superIsMoveable
-    }
+		if let superMovable = superview as? Moveable {
+			return !superMovable.isMovable
+		}
+		if let superMovable = superview?.superview as? Moveable {
+			return !superMovable.isMovable
+		}
+		return true
+	}
 
     func makeUnmovable() {
-        inMoveMode = false
+		inMoveMode = false
 
-        if !isMovable {
-            return
-        }
+		if !isMovable {
+			return
+		}
 
         gestureRecognizers?.filter { return $0 is UIPanGestureRecognizer }.forEach { $0.isEnabled = false }
     }
 
     func makeMoveable() {
-        inMoveMode = true
+		inMoveMode = true
 
-        if !isMovable {
-            return
-        }
+		if !isMovable {
+			return
+		}
 
         var startPoint:CGPoint = .zero
         var currentPoint:CGPoint = .zero

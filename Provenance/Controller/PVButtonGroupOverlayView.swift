@@ -46,7 +46,10 @@ final class PVButtonGroupOverlayView: MovableButtonView {
             super.touchesMoved(touches, with: event)
             return
         }
-        let touch = touches.first!
+		guard let touch = touches.first else {
+			ELOG("No touches!?")
+			return
+		}
         let location = touch.location(in: self)
         for button: JSButton in buttons {
             let touchArea = CGRect(x: location.x - 10, y: location.y - 10, width: 20, height: 20)
@@ -82,4 +85,14 @@ final class PVButtonGroupOverlayView: MovableButtonView {
     var isMovable: Bool {
         return true
     }
+
+	override func didStartMoving() {
+		super.didStartMoving()
+		buttons.forEach { $0.isUserInteractionEnabled = false }
+	}
+
+	override func didFinishMoving(velocity:CGPoint) {
+		super.didFinishMoving(velocity: velocity)
+		buttons.forEach { $0.isUserInteractionEnabled = true }
+	}
 }

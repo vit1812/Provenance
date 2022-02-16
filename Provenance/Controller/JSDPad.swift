@@ -161,7 +161,12 @@ final class JSDPad: MovableButtonView {
         return image
     }
 
-    override func touchesBegan(_ touches: Set<UITouch>, with _: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		if inMoveMode || !isUserInteractionEnabled {
+			super.touchesBegan(touches, with: event)
+			return
+		}
+
         guard let delegate = delegate, let touch = touches.first else {
             return
         }
@@ -187,7 +192,12 @@ final class JSDPad: MovableButtonView {
         delegate!.dPad(self, joystick: (x: Float(x), y: Float(y)))
     }
 
-    override func touchesMoved(_ touches: Set<UITouch>, with _: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+		if inMoveMode || !isUserInteractionEnabled {
+			super.touchesMoved(touches, with: event)
+			return
+		}
+
         guard let delegate = delegate, let touch = touches.first else {
             return
         }
@@ -206,7 +216,12 @@ final class JSDPad: MovableButtonView {
         }
     }
 
-    override func touchesCancelled(_: Set<UITouch>, with _: UIEvent?) {
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+		if inMoveMode || !isUserInteractionEnabled {
+			super.touchesCancelled(touches, with: event)
+			return
+		}
+
         currentDirection = .none
         dPadImageView.image = image(for: currentDirection)
 
@@ -222,7 +237,12 @@ final class JSDPad: MovableButtonView {
         }
     }
 
-    override func touchesEnded(_: Set<UITouch>, with _: UIEvent?) {
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+		if inMoveMode || !isUserInteractionEnabled {
+			super.touchesEnded(touches, with: event)
+			return
+		}
+
         currentDirection = .none
         dPadImageView.image = image(for: currentDirection)
 
