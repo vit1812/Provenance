@@ -771,6 +771,7 @@
 					"-fpermissive",
 					"-fno-operator-names",
 					"-fsingle-precision-constant",
+					"-DFRONTEND_SUPPORTS_RGB565",
 				);
 				SDKROOT = iphoneos;
 				TVOS_DEPLOYMENT_TARGET = 12.1;

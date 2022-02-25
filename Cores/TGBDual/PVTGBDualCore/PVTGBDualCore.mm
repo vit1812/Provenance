@@ -75,7 +75,7 @@ static __weak PVTGBDualCore *_current;
     retro_set_audio_sample_batch(audio_batch_callback);
     
     retro_init();
-    
+    log_cb = my_log_cb;
     const char *fullPath = [path UTF8String];
     
     struct retro_game_info info = {NULL};
@@ -316,3 +316,8 @@ static bool environment_callback(unsigned cmd, void *data) {
 }
 
 @end
+
+retro_log_printf_t my_log_cb(enum retro_log_level level,
+                           const char *fmt, ...) {
+    
+}
