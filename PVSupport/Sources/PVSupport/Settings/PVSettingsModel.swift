@@ -236,6 +236,9 @@ extension MirroredSettings {
         @objc public dynamic var multiThreadedGL = true
         @objc public dynamic var multiSampling = true
 		@objc public dynamic var movableButtons = false
+        #if os(tvOS)
+        @objc public dynamic var tvOSThemes = false
+        #endif
     }
 
     public dynamic var debugOptions = DebugOptions()

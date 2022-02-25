@@ -331,7 +331,7 @@ final class PVSettingsViewController: PVQuickTableViewController {
 								detailText: .subtitle("Allow user to move on screen controller buttons."),
 								key: \PVSettingsModel.debugOptions.movableButtons)
         ]
-        #else
+        #else // tvOS
          let betaRows: [TableRow] = [
 	     	PVSettingsSwitchRow(text: NSLocalizedString("Use Metal", comment: "Use Metal"), detailText: .subtitle("Use experimental Metal backend instead of OpenGL"),
                                 key: \PVSettingsModel.debugOptions.useMetal,
@@ -370,6 +370,15 @@ final class PVSettingsViewController: PVQuickTableViewController {
             PVSettingsSwitchRow(text: NSLocalizedString("Use SwiftUI", comment: "Use SwiftUI"),
                                detailText: .subtitle("Don't use unless you enjoy empty windows."),
                                key: \PVSettingsModel.debugOptions.multiSampling,
+                                   customization: { cell, _ in
+                                       cell.textLabel?.font = UIFont.systemFont(ofSize: 30, weight: UIFont.Weight.regular)
+                                       cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 20, weight: UIFont.Weight.regular)
+                               }
+           ),
+            
+            PVSettingsSwitchRow(text: NSLocalizedString("Use Themes", comment: "Use Themes"),
+                               detailText: .subtitle("Use iOS themes on tvOS"),
+                               key: \PVSettingsModel.debugOptions.tvOSThemes,
                                    customization: { cell, _ in
                                        cell.textLabel?.font = UIFont.systemFont(ofSize: 30, weight: UIFont.Weight.regular)
                                        cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 20, weight: UIFont.Weight.regular)

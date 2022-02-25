@@ -35,6 +35,12 @@ final class PVAppDelegate: UIResponder, UIApplicationDelegate {
         DispatchQueue.main.async {
             Theme.currentTheme = Theme.darkTheme
         }
+        #elseif os(tvOS)
+        if PVSettingsModel.shared.debugOptions.tvOSThemes {
+            DispatchQueue.main.async {
+                Theme.currentTheme = Theme.darkTheme
+            }
+        }
         #endif
     }
     
@@ -50,10 +56,10 @@ final class PVAppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
 
         #if os(tvOS)
-            window.tintColor = UIColor(red: 0.1, green: 0.5, blue: 0.95, alpha: 1.0)  // PVBlue
+        window.tintColor = .provenanceBlue
         #endif
 
-        if #available(iOS 14, *), PVSettingsModel.shared.debugOptions.useSwiftUI {
+        if #available(iOS 14, tvOS 14, *), PVSettingsModel.shared.debugOptions.useSwiftUI {
             let viewModel = PVRootViewModel()
             let rootViewController = PVRootViewController.instantiate(
                 updatesController: libraryUpdatesController,
@@ -66,10 +72,7 @@ final class PVAppDelegate: UIResponder, UIApplicationDelegate {
                 options: .init(widthPercent: 0.8, animationDuration: 0.18, overlayColor: .clear, overlayOpacity: 1, shadowOpacity: 0.0)
             )
             
-            let window = UIWindow(frame: UIScreen.main.bounds)
             window.rootViewController = sideNav
-            self.window = window
-            window.makeKeyAndVisible()
         } else {
             let storyboard = UIStoryboard.init(name: "Provenance", bundle: Bundle.main)
             let vc = storyboard.instantiateInitialViewController()
