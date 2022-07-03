@@ -17,6 +17,12 @@
       location = "container:"
       name = "Cores">
       <FileRef
+         location = "group:Cores/VirtualJaguar/Core-VirtualJaguar.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Cores/O2EM/O2EM.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Cores/Atari800/PVAtari800.xcodeproj">
       </FileRef>
       <FileRef
@@ -58,16 +64,10 @@
       <FileRef
          location = "group:Cores/TGBDual/PVTGBDual.xcodeproj">
       </FileRef>
-      <FileRef
-         location = "group:Cores/O2EM/O2EM.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Cores/VirtualJaguar/Core-VirtualJaguar.xcodeproj">
-      </FileRef>
    </Group>
    <Group
-      location = "container:"
-      name = "Cores Development">
+      location = "group:"
+      name = "Cores Libretro">
       <FileRef
          location = "group:Cores/FinalBurnNeo/PVFBNeo.xcodeproj">
       </FileRef>
@@ -75,8 +75,12 @@
          location = "group:Cores/DosBox/PVDosBox.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:Cores/snesticle/PVSnesticle.xcodeproj">
+         location = "group:Cores/Mini_vMac/PVMiniVMac.xcodeproj">
       </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Cores Development">
       <FileRef
          location = "group:Cores/4DO/4DO.xcodeproj">
       </FileRef>
@@ -90,10 +94,7 @@
          location = "group:Cores/Desmume2015/PVDesmume2015.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:Cores/VecXGL/VecXGL.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Cores/Play/PVPlayCore.xcodeproj">
+         location = "group:Cores/Dolphin/PVDolphin.xcodeproj">
       </FileRef>
       <FileRef
          location = "group:Cores/DuckStation/PVDuckStation.xcodeproj">
@@ -102,10 +103,16 @@
          location = "group:Cores/Flycast/PVFlycast.xcodeproj">
       </FileRef>
       <FileRef
+         location = "group:Cores/Play/PVPlayCore.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Cores/PPSSPP/PVPPSSPP.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:Cores/Dolphin/PVDolphin.xcodeproj">
+         location = "group:Cores/snesticle/PVSnesticle.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Cores/VecXGL/VecXGL.xcodeproj">
       </FileRef>
    </Group>
 </Workspace>
