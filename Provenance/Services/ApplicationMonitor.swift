@@ -29,7 +29,7 @@ private let ReceivedApplicationState: @convention(c) (CFNotificationCenter?, Uns
 class ApplicationMonitor {
     static let shared = ApplicationMonitor()
 
-    let locationManager = LocationManager()
+//    let locationManager = LocationManager()
 
     private(set) var isMonitoring = false
 
