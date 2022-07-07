@@ -1687,8 +1687,9 @@ static size_t update_audio_batch(const int16_t *data, size_t frames)
             case PVSaturnButtonStart:
                 GCControllerButtonInput* button = dualSense ? dualSense.buttonHome : gamepad.rightTrigger;
                 return button.isPressed;
-            default:
-                break;
+            /*
+                default: break;
+             */
         }}
     } else if ([controller gamepad]) {
         GCGamepad *gamepad = [controller gamepad];
